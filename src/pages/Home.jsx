@@ -11,8 +11,12 @@ function Home({menu}) {
       <div className="home-left">
         <h1>Go anywhere with Uber</h1>
         <p>Request a ride, hop in, and go.</p>
-       <input type="text" placeholder='Enter Location'/>
-       <input type="text" placeholder='Enter Destination' />
+        <form className='home-form'>
+        <input type="text" placeholder='Enter Location'/>
+        <input type="text" placeholder='Enter Destination'/>
+        <button>See Prices</button>
+        </form>
+       
       </div>
       <div className="home-right">
         <img src={img} width={470} height={600}/>
