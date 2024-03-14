@@ -4,7 +4,7 @@ import { BrowserRouter,Outlet,Route,Routes } from "react-router-dom";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Home from "./pages/Home";
-import Ride from "./Components/Ride";
+import Ride from "./pages/Ride";
 
 const Layout =()=>{
   return (<>

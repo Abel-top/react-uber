@@ -1,3 +1,43 @@
 .home{
+    background: var(--blue);
+    padding: 100px;
+    display: flex;
+    z-index: -1;
+    
+}
+.home-left{
+   flex: 3;
+   display: flex;
+   gap:10px;
+   padding: 20px;
+   width: 70%;
+   margin-top: 50px;
+   flex-direction: column;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
+.home-left input{
+   width: 40%;
+   padding: 10px;
+   margin-top: 20px;
+   border-radius: 7px;
+   outline: none;
+   border:1px solid green;
+}
+
+
+.home-right{
+    flex: 3;
+}
+.home-right img{
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+}
+.home-left-none{
+    display: none;
+    
+}
+.home-right-none{
+    display: none;
+    
 }

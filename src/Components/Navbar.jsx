@@ -2,20 +2,29 @@ import React, { useState } from 'react'
 import '../styles/navbar.css'
 import img from '../img/menu.png'
 import { Link } from 'react-router-dom'
+import Home from '../pages/Home'
 
 function Navbar() {
   const [menuOpen,setMenuOpen] =useState(false)
-
    const handleMenu =()=>{
     setMenuOpen(!menuOpen);
 
    }
+   const handleLink =()=>{
+          if(menuOpen){
+            setMenuOpen(!menuOpen)
+
+          }else{
+            
+          }
+   }
   return (
     <div className='nav'>
       <div className="left">
-          <h1 className='logo'>Uber</h1>
+          <h1 className='logo' >
+            <Link to='/' className='Link' onClick={handleLink}>Uber</Link></h1>
         <div className={menuOpen ? "menu-left-content animate":"left-contents"}>
-          <ul onClick={handleMenu}>
+          <ul onClick={handleLink}>
             <li>
               <Link className='Link' to='/ride'>Ride</Link>
             </li>
@@ -38,7 +47,7 @@ function Navbar() {
         <button>Login</button>
         <button>Sign Up</button>
       </div>
-
+      
     </div>
   )
 }

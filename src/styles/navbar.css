@@ -61,6 +61,13 @@ ul li{
     font-family: 'Courier New', Courier, monospace;
 
 }
+.left-contents ul li:hover{
+    border-bottom: 3px solid #0000ff;
+    
+}
+.none{
+    display: none;
+}
 
 @media screen and (max-width:700px){
  
@@ -129,7 +136,12 @@ ul li{
             color:white;
             font-weight: bold;;
         }
-       
+        .logo{
+            margin-left: 25px;
+        }
+        .nav-menu-right {
+        margin-left: 124px;
+        }
 }
 
 @keyframes mymove {
