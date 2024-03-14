@@ -1,6 +1,6 @@
 :root {
     --blue: rgb(102, 115, 228);
-    --other: #00b;
+    --green: rgb(29, 192, 138);
   }
 
 .nav{
@@ -54,6 +54,13 @@ ul li{
 .menu-opener{
     display: none;
 }
+.Link{
+    list-style: none;
+    text-decoration: none;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+
+}
 
 @media screen and (max-width:700px){
  
@@ -62,32 +69,40 @@ ul li{
          }
          .menu-left-content{
             display: block;
-            margin-top: 100px;
+            margin-top: 100px; 
          }
          .nav-right{
             display: none;
          }
          .nav-menu-right button{
             display: block;
-            padding: 2px;
+            padding: 3px;
             width: 75px;
             font-size: 12px;
             height: 30px;
-            margin-top: 12px;
-            
+            margin-top: 14px;
+            border-radius: 7px;
+            outline: none;
+            border: 1px solid green;
          }
          .nav-menu-right p{
-            margin-left: 20px;
+            margin-left: 13px;
+            margin-top: 9px;
+            width: 10%; 
          }
          .nav-menu-right{
             display: block;
             align-items: center;
-            justify-content: center;
+            text-align: center;
+            padding-bottom: 14px;
             margin-left: 200px;
             gap: 15px;
+            
+              
          }
          .nav{
             display: block;
+            
          }
         .menu-opener{
             display: block;
@@ -95,13 +110,32 @@ ul li{
             position: absolute;
             top:0.7rem;
             right:0.5rem;
-            /* justify-content: space-between; */
-            
-            
+            transition-delay: 2s;
         }
-        .logo{
-            /* margin-left: 5px; */
+        .animate{
+            animation:mymove 1s linear 0s alternate;
         }
+        .menu-left-content ul li:hover
+        {
+            background: var(--green);
+            border-radius: 9px;
+
+        }
+        .nav-menu-right button:hover{
+            border: 2px solid greenyellow;
+
+        }
+        .nav-menu-right p:hover{
+            color:white;
+            font-weight: bold;;
+        }
+       
 }
 
+@keyframes mymove {
+    0% {opacity:0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+
+  }
 
