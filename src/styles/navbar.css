@@ -1,5 +1,5 @@
 :root {
-    --blue: rgb(102, 115, 228);
+    --blue: rgb(51, 54, 238);
     --green: rgb(29, 192, 138);
   }
 
@@ -7,6 +7,9 @@
     background:var(--blue);
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top:0;
+    z-index: 99;
 }
 .logo{
   padding: 12px;
@@ -62,7 +65,7 @@ ul li{
 
 }
 .left-contents ul li:hover{
-    border-bottom: 2px solid #0000ff81;
+    border-bottom: 2px solid #ffffff;
     
 }
 .none{
@@ -75,11 +78,13 @@ ul li{
 }
 
 @media screen and (max-width:700px){
- 
+         
+         
          .left-contents{
             display: none;
          }
          .menu-left-content{
+            
             display: block;
             margin-top: 100px; 
          }

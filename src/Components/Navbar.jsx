@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/navbar.css'
 import img from '../img/menu.png'
 import { Link } from 'react-router-dom'
-import Home from '../pages/Home'
+
 
 function Navbar() {
   const [menuOpen,setMenuOpen] =useState(false)
+
+  
+ 
    const handleMenu =()=>{
     setMenuOpen(!menuOpen);
 
